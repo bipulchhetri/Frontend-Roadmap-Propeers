@@ -6,22 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="getLocation()">Get My Location</button>
-<p id="location"></p>
-<script>
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        document.getElementById("location").innerText = "Geolocation is not supported by this browser.";
-      }
-    }
-  
-    function showPosition(position) {
-      var lat = position.coords.latitude;
-      var lon = position.coords.longitude;
-      document.getElementById("location").innerText = "Latitude: " + lat + "<br>Longitude: " + lon;
-    }
-  </script>
+    <h2>Get user location</h2>
+    <button id="location">Get Location</button>
+<p id="show"></p>
+    <script>
+        function gotLocation(position){
+            const lat=position.coords.latitude;
+            const lon=position.coords.longitude;
+        
+        document.getElementById('show').innerHTML = `
+                Latitude: ${lat}<br>
+                Longitude: ${lon}
+            `;
+        }
+        function failed()
+        {
+            console.log("failed")
+        }
+        const btn=document.getElementById('location');
+        btn.addEventListener('click', ()=>{
+            navigator.geolocation.getCurrentPosition(gotLocation,failed);
+
+        });
+    </script>
 </body>
 </html>
