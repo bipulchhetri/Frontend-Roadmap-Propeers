@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Functions Example</title>
+  <style>
+    /* CSS Variables */
+    :root {
+      --main-bg-color: #ff6600;
+      --main-font-size: 1rem;
+      --max-width: 1000px;
+    }
+
+    /* Using calc() for dynamic width calculation */
+    .container {
+      width: calc(100% - 50px); /* 100% width minus 50px padding */
+      margin: 20px;
+      background-color: var(--main-bg-color);
+      padding: 20px;
+    }
+
+    /* Using var() to access custom properties */
+    .text {
+      font-size: var(--main-font-size);
+      color: white;
+      padding: 10px;
+    }
+
+    /* Using rgba() for transparent color */
+    .transparent-box {
+      background-color: rgba(255, 0, 0, 0.4); /* Semi-transparent red */
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+
+    /* Using hsl() for color */
+    .gradient-box {
+      background: linear-gradient(to right, hsl(120, 100%, 50%), hsl(240, 100%, 50%));
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+
+    /* Using scale() and rotate() for transformation */
+    .transform-box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .transform-box:hover {
+      transform: rotate(45deg) scale(1.5);
+    }
+
+    /* Using clamp() for responsive font size */
+    .responsive-text {
+      font-size: clamp(1rem, 2vw, 3rem); /* Ensures font size is responsive */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>CSS Functions Example</h1>
+
+  <!-- Container using calc() -->
+  <div class="container">
+    <p class="text">This is a container with dynamic width (calc()) and a variable background color (var()).</p>
+  </div>
+
+  <!-- Transparent box using rgba() -->
+  <div class="transparent-box"></div>
+
+  <!-- Gradient box using hsl() -->
+  <div class="gradient-box"></div>
+
+  <!-- Transform box using scale() and rotate() -->
+  <div class="transform-box"></div>
+
+  <!-- Responsive text using clamp() -->
+  <p class="responsive-text">This text has a responsive font size.</p>
+
+</body>
+</html>
