@@ -1,77 +1,54 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation Example</title>
-  <style>
-    /* Define the animation with @keyframes */
- 
-    @keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(50px); }
-    100% { transform: translateY(0); }
-}
-    /* Styling the animated element */
-    .animated-box {
-      width: 100px;
-      height: 100px;
-      background-color: royalblue;
-      border-radius: 10px;
-      animation: bounce 3s step-end infinite;
-    }
-  </style>
-</head>
-<body>
-  <h1>CSS Animation Example</h1>
-  <div class="animated-box"></div>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Running Border Color Animation</title>
-  <style>
-    @keyframes color {
-      0% {
-        border-color: red transparent transparent transparent;
-      }
-      25% {
-        border-color: transparent blue transparent transparent;
-      }
-      50% {
-        border-color: transparent transparent green transparent;
-      }
-      75% {
-        border-color: transparent transparent transparent yellow;
-      }
-      100% {
-        border-color: red transparent transparent transparent;
-      }
-    }
-
-    .color {
-      width: 200px;
-      height: 200px;
-      border: 10px solid transparent; 
-      border-radius: 10px; 
-      animation: borderColorRun 3s linear infinite; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #333;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Zen</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-tracks: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #252839;
+        }
+        h2{
+            position: relative;
+            font-size: 14vw;
+            color: #252839;
+            -webkit-text-stroke: 0.3vw #383d52;
+            text-transform: uppercase;
+        }
+        h2::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: rgb(255, 165, 0);
+            -webkit-text-stroke: 0vw #383d52;
+            border-right: 2px solid hsl(47, 96%, 49%);
+            overflow: hidden ;
+            animation: animate 4s linear infinite;
+        }
+        @keyframes animate{
+            0%,10%,50%{
+                width: 0;
+            }
+            70%,90%{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Running Border Color Animation</h1>
-  <div class="color">Colorful Border</div>
+    <h2 data-text="Coderzen"> CODER ZEN</h2>
 </body>
 </html>
