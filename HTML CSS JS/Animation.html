@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Example</title>
+  <style>
+    /* Define the animation with @keyframes */
+ 
+    @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(50px); }
+    100% { transform: translateY(0); }
+}
+    /* Styling the animated element */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      border-radius: 10px;
+      animation: bounce 3s step-end infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Animation Example</h1>
+  <div class="animated-box"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running Border Color Animation</title>
+  <style>
+    @keyframes color {
+      0% {
+        border-color: red transparent transparent transparent;
+      }
+      25% {
+        border-color: transparent blue transparent transparent;
+      }
+      50% {
+        border-color: transparent transparent green transparent;
+      }
+      75% {
+        border-color: transparent transparent transparent yellow;
+      }
+      100% {
+        border-color: red transparent transparent transparent;
+      }
+    }
+
+    .color {
+      width: 200px;
+      height: 200px;
+      border: 10px solid transparent; 
+      border-radius: 10px; 
+      animation: borderColorRun 3s linear infinite; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Running Border Color Animation</h1>
+  <div class="color">Colorful Border</div>
+</body>
+</html>
