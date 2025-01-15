@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Organic Store</title>
-    <meta name="description" content="content="Best Quality Products Join The Organic Movement! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Shop Now Free Shipping Above $5 Only Certified Organic 100% Guarantee Huge Savings At Lowest Price Easy Returns No Questions Asked Best Selling Products Farm Fresh Fruits Ut sollicitudin quam">
+    <title>Organic Store</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
-    <header>
+    <nav>
         <div class="logo">
-            <img src="asset/logo.svg" alt="">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg" alt="">
         </div>
-       <div class="right">
-        <nav>
-            <ul>
-                <li>Everything</li>
-                <li>Groceries</li>
-                <li>Juice</li>
-            </ul>
-        </nav>
-        <div class="left">
-            <ul>
-                <li>About</li>
-                <li>contact</li>
-                <li>Rs.</li>
-                <li>Bucket</li>
-                <li>Profile</li>
-            </ul>
-        </div>
-       </div>
-    </header>
+        <ul>
+            <li><a href="#">Everything</a></li>
+            <li><a href="#">Groceries</a></li>
+            <li><a href="#">Juice</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+<li ><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+<li><a href=""></a><i class="fa-regular fa-user"></i></li>
+        </ul>
+        
+        <div class="menu-toggle">☰</div>
+    </nav>
 
-    <script src="script.js"></script>
+    <div class="hero">
+        <div class="hero-image">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png" alt="Organic Products">
+        </div>
+        <div class="hero-content">
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+            <h3>Best Quality Products
+            </h3>
+            <h1 style="font-size: 36px;">Join The Organic Movement!</h1>
+            <p>Discover the best quality organic products at affordable prices. Let us help you live healthier and better!</p>
+            <button><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
+        </div>
+    </div>
+<div class="know-more">
+    <div class="mini-card">
+        <div class="icon"><i class="fa-solid fa-bucket"></i></div>
+        <div class="text"> Free Shipping
+            <p>Above $5 Only</p>
+        </div>
+    </div>
+    <div class="mini-card">
+        <div class="icon"><i class="fa-solid fa-bucket"></i></div>
+        <div class="text"> Free Shipping
+            <p>Above $5 Only</p>
+        </div>
+    </div>
+    <div class="mini-card">
+        <div class="icon"><i class="fa-solid fa-bucket"></i></div>
+        <div class="text"> Free Shipping
+            <p>Above $5 Only</p>
+        </div>
+    </div>
+    <div class="mini-card">
+        <div class="icon"><i class="fa-solid fa-bucket"></i></div>
+        <div class="text"> Free Shipping
+            <p>Above $5 Only</p>
+        </div>
+    </div>
+  
+</div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

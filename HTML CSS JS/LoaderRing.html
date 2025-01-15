@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bipul</title>
+    <title>Coder zen</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #060606;
+        }
+        h2{
+            position: relative;
+            color: white;
+            left: 35%;
+          top: 40%;
+          z-index: 1;
+        }
+        .loader{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            box-sizing: border-box;
+            background-color: #000;
+        }
+         .face{
+            position: absolute;
+            border: 2px solid #121212;
+
+        }
+         .fb{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #090909;
+            box-shadow: 0 0 10px rgba(0,0,0,1 );
+            border-left:2px solid red;
+            border-top: 2px solid red;
+            border-radius: 50%;
+            animation: animate 3s linear infinite;
+
+        }
+        .fb2{
+            top: 23%;
+            left: 23%;
+            right: 23%;
+            bottom: 23%;
+            background: #090909;
+            box-shadow: 0 0 10px rgba(0,0,0,1 );
+            border-left:2px solid #9be90b;
+            border-top: 2px solid #9be90b;
+            border-radius: 50%;
+            animation: animatetwo 3s linear infinite;
+
+
+        }
+    
+      
+    .fb .circle{
+        transform: rotate(-45deg);
+    }
+    .fb2 .circle{
+        transform: rotate(45deg);
+    }
+    
+    
+
+    @keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes animatetwo{
+        0%{
+            transform: rotate(-30deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="loader">
+        <div class="face fb">
+            <div class="circle"></div>
+        </div>
+        <h2>CODER ZEN</h2>
+        <div class="face fb2">
+            <div class="circle"></div>
+        </div>
+
+    </div>
 </body>
 </html>
