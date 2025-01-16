@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+section{
+    position: relative;
+
+    background-color: #111;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+.row{
+ position: relative;
+    width: 100%;
+    font-size: 64px;
+    transform: rotate(-10deg);
+}
+i{
+    color: black;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+}
+
+i:hover{
+    transition: 0s;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
