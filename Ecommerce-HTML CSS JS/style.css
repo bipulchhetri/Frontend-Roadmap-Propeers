@@ -127,6 +127,13 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .customer-review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+   
     .product{
         display: flex;
         flex-direction: column;
@@ -307,4 +314,318 @@ font-size: 14px;
 	position:relative;
 	top:1px;
 }
-  
+/* customer review */
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .reviews-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .reviews-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .review, .deal {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .review {
+            border: 1px solid #ddd;
+        }
+
+        .review .stars {
+            color: #f5b301;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .review img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review .author {
+            font-weight: bold;
+        }
+
+        .deal {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.pixabay.com/photo/2020/04/28/13/18/tulips-5104497_1280.jpg') center/cover no-repeat;
+
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .deal h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .deal p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .deal a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .deal a:hover {
+            background: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .reviews-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .review, .deal {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+        /* logo */
+        .logo{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* footer */
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews and Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .reviews-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .reviews-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .review, .deal {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .review {
+            border: 1px solid #ddd;
+        }
+
+        .review .stars {
+            color: #f5b301;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .review img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review .author {
+            font-weight: bold;
+        }
+
+        .deal {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/300') center/cover no-repeat;
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .deal h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .deal p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .deal a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .deal a:hover {
+            background: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .reviews-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .review, .deal {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+       
+        .footer {
+            background-color: #111;
+            color: #fff;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-column {
+            flex: 1 1 calc(25% - 20px);
+            text-align: center;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-column p, .footer-column ul {
+            font-size: 0.9rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-column {
+                flex: 1 1 100%;
+            }
+        }
