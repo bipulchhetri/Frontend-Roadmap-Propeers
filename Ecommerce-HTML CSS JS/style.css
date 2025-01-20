@@ -555,6 +555,10 @@ font-size: 14px;
         }
 
         @media (max-width: 768px) {
+           .mini-card{
+            overflow: hidden;
+            width: 50%;
+           }
             .reviews-container {
                 flex-direction: column;
                 align-items: center;
@@ -563,6 +567,37 @@ font-size: 14px;
             .review, .deal {
                 flex: 1 1 100%;
                 margin-bottom: 20px;
+            }
+
+            .call{
+                display: flex;
+                flex-direction: column;
+            }
+            .leaf{
+                margin-top: 20%;
+            }
+            .all-f-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+        
+            }
+
+            .f-card{
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                border: 2px solid green;
+                margin-bottom: 20px;
+            }
+        
+            .f-card img{
+                background-color: transparent;
+               text-align: center;
+               margin: auto;
             }
         }
 
